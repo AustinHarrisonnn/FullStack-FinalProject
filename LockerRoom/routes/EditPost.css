@@ -1,0 +1,29 @@
+.edit-post{
+    background-color: rgba(255, 0, 0, 0);
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-form {
+    flex-direction: column;
+    width: 800px;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.edit-form textarea{
+    height: 200px;
+    width: 100%;
+    font-size: 16pt;
+}
+.edit-form input{
+    width: 100%;
+    font-size: 16pt;
+}
+.edit-form button{
+    width: 100%;
+    font-size: 14pt;
+}

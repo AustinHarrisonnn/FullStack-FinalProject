@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../utils/supabaseClient';
+import './EditPost.css'
 
 const EditPost = () => {
     const { id } = useParams();
@@ -37,9 +38,12 @@ const EditPost = () => {
     return (
         <div className='edit-post'>
             <h2>Edit Post</h2>
-            <form onSubmit={handleUpdate}>
+            <form onSubmit={handleUpdate} className='edit-form'>
+                <h3>title</h3>
                 <input type='text' value={title} onChange={(e) => setTitle(e.target.value)} required />
+                <h3>description</h3>
                 <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+                <h3>image</h3>
                 <input type='text' value={image_url} onChange={(e) => setImageUrl(e.target.value)} />
                 <button type='submit'>Save Changes</button>
             </form>

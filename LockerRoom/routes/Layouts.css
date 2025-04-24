@@ -1,6 +1,5 @@
-/* Layouts.css */
 .layout {
-    background-color: #282c34;
+    background-color: #282c3400;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -23,11 +22,13 @@
 
 .nav-links .home-link {
     margin-right: 20px;
+    font-size: 22pt;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 22pt;
 }
 
 .nav-links a:hover {
