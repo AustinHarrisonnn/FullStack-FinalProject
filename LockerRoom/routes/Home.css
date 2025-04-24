@@ -5,14 +5,26 @@
 }
 
 .post-card {
-    background-color: rgb(184, 50, 50);
+    color: black;
+    background-color: rgb(255, 255, 255);
     width: 1300px;
     border-radius: 4px;
-    height: 150px;
+    height: 190px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 .post-card h2, p {
     margin-left: 2rem;
+}
+
+.post-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-card img{
+    align-self: flex-end;
+    height: 200px;
+    width: 220px;
 }

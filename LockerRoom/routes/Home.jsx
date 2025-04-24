@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { supabase } from '../utils/supabaseClient';
 import './Home.css'
 
@@ -28,13 +29,15 @@ const Home = () => {
             <h2>Latest Posts:</h2>
             <div className='post-list'>
                 {posts.map((post) => (
-                    <div key={post.id} className='post-card'>
-                        <h2>{post.title}</h2>
-                        {post.image_url && <img src={post.image_url} alt='post' />}
-                        <p className='created-at'>
-                            Posted on {new Date(post.created_at).toLocaleString()}
-                        </p>
-                    </div>
+                    <Link to={`/post/${post.id}`} key={post.id} className='post-card-link'>
+                        <div key={post.id} className='post-card'>
+                            <h2>{post.title}</h2>
+                            <p>{post.upvotes} Upvotes</p>
+                            <p className='created-at'>
+                                Posted on {new Date(post.created_at).toLocaleString()}
+                            </p>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

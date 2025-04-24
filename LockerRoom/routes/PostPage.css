@@ -1,0 +1,45 @@
+.comments {
+    margin-top: 1rem;
+}
+.comment {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.comment-section button{
+    margin-left: 3rem;
+    padding: 0.5rem;
+    font-size: 15pt;
+    border-radius: 10px;
+}
+textarea{
+    width: 700px;
+}
+form {
+    display: flex;
+}
+img{
+    height: 300px;
+    width: 500px;
+    margin-left: 2rem;
+}
+.post-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 4rem;
+    margin-top: 1rem;
+    margin-right: 10px;
+}
+.post-actions button{
+    padding: 15px;
+    width: 80px;
+    text-align: center;
+}
