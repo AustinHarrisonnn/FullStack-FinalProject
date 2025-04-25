@@ -7,7 +7,7 @@ const Layout = () => {
         <div>
             <header style={{ backgroundColor: '#213448', color: 'white', padding: '10px', position: 'absolute', top: 0, left: 0, right: 0, width: '100%'}}>
                 <nav>
-                    <ul style={{ display: 'flex', listStyle: 'none', alignItems: 'center' }}>
+                    <ul style={{ display: 'flex', listStyle: 'none', alignItems: 'center', gap: '50px'}}>
                         <li style={{ marginRight: '20px' }}>
                             <Link to="/">
                                 <img 
@@ -17,12 +17,12 @@ const Layout = () => {
                                 />
                             </Link>
                         </li>
-                        <li style={{ marginRight: '20px' }}>
+                        <li style={{ marginRight: '30px' }}>
                             <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '22pt' }}>
                                 Home
                             </Link>
                         </li>
-                        <li style={{ marginRight: '20px' }}>
+                        <li style={{ marginRight: '50px' }}>
                             <Link to="/create" style={{ color: 'white', textDecoration: 'none', fontSize: '22pt' }}>
                                 Create Post
                             </Link>
